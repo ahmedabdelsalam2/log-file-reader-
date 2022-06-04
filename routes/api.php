@@ -15,10 +15,6 @@ use App\Http\Controllers\LogController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
 
-Route::controller(LogController::class)->group(function () {
-    Route::post('/get-file', 'getFile');
-});
+Route::post('/login', [LogController::class, 'login']);
+Route::post('/get-file', [LogController::class, 'getFile'])->middleware(['checkToken']);
