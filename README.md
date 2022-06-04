@@ -18,8 +18,8 @@ php artisan serve
 
 ### Lint of routes
 ###### All routes under API
-- **your-domain.com/api/login**
-- **your-domain.com/api/get-file**
+- **your-domain.com/api/login ( POST ) **
+- **your-domain.com/api/get-file ( POST ) **
 
 
 ### After installing dependencies you can login with
