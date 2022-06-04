@@ -12,6 +12,13 @@ abstract class TestCase extends BaseTestCase
     {
         parent::tearDown();
 
-        echo memory_get_usage() . PHP_EOL;
+        echo PHP_EOL . "************************************" . PHP_EOL;
+        echo "************************************" . PHP_EOL;
+        echo "************************************" . PHP_EOL . PHP_EOL;
+        echo "****  memory usage : " . (memory_get_usage() / 8e+6) . PHP_EOL . PHP_EOL;
+        echo "************************************" . PHP_EOL;
+        echo "************************************" . PHP_EOL;
+        echo "************************************" . PHP_EOL . PHP_EOL;
+        ;
     }
 }
