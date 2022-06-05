@@ -3,14 +3,25 @@
 # File reader powerd by ( Ahmed abd el salam )
 
 ####  You can read almost any file except Microsoft family files.
-######## but make sure the file has read permission.
+###### but make sure the file has read permission.
 ## Install the dependencies
 
 ```bash
 composer install
 ```
 
-### you can run the project
+### Copy .env.example and rename it to .env then run
+
+```bash
+php artisan key:generate
+```
+
+### After APP_URL variable add new variable for token
+```bash
+APP_TOKEN=1|fykCQIePp5v7V4vMblfp2n0BtnTZSiDGIieKhwfZ
+```
+
+### Now you can run the project 
 
 ```bash
 php artisan serve

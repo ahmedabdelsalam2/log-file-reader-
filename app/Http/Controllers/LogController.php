@@ -63,7 +63,7 @@ class LogController extends Controller
         $limit = 10;
 
         // How many pages will there be
-        $pages = $linesTotal / $limit;
+        $pages = round($linesTotal / $limit);
 
         // What page are we currently on?
         $page = $res_page;
